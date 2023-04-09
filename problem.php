@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,26 +18,33 @@
 
 include("./view/header.php");
 echo "<br>";
-$i = $_POST["role"];
+$role = $_POST["role"];
+$_SESSION["role"] = $_POST["role"];
+$_SESSION["title"] = $_POST["title"];
+$_SESSION["fname"] = $_POST["fname"];
+$_SESSION["lname"] = $_POST["lname"];
+
+
+
 
 echo '<div class="center">';
-switch ($i) {
+switch ($role) {
   case "Admin":
-    echo "Hello $i <br>";
+    echo "Hello $role <br>";
 
     echo " <a href='inst-working.php'>My computer is not working</a><br>";
     echo " <a href='new-account.php'>Create New Account<br></a>";
     echo '</div>';
       break;
   case "Manager":
-    echo "Hello $i <br>";
+    echo "Hello $role <br>";
 
     echo " <a href='lost-password.php'>I lost my passowrd</a><br>";
     echo " <a href='inst-working.php'>My computer is not working</a><br>";
     echo '</div>';
       break;
   case "CEO":
-    echo "Hello $i <br>";
+    echo "Hello $role <br>";
 
     echo " <a href='need-help.php'>I need some help</a><br>";
     echo " <a href='inst-working.php'>My computer is not working</a><br>";

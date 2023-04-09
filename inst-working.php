@@ -1,6 +1,22 @@
+<!DOCTYPE html>
 <html>
-<body>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>Halifax Canoe and Kayak</title>
 
-<h1>So your computer is not working</h1>
+  </head>
+
+
+<body>
+<?php include("./view/header.php");
+
+echo '<div class="center">';
+echo "So your computer is not working.";
+echo "</div>";
+include("./view/footer.php");
+?>
 </body> 
 </html>
