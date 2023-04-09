@@ -14,7 +14,7 @@
     <?php include("./view/header.php"); ?>
 
 <div class=center>
-    <form action="welcome.php" method="post">
+    <form action="problem.php" method="post">
   <table>
   <tr>
 <th> 
@@ -27,14 +27,14 @@
    
    
   </select></th>
-<th> <input type="text" name="name" placeholder="First Name"></th>
-<th> <input type="text" name="name" placeholder="Last Name"></th>
+<th> <input type="text" name="fname" placeholder="First Name"></th>
+<th> <input type="text" name="lname" placeholder="Last Name"></th>
 <th> 
   <select name="role" id="role">
 
-  <option value="admin">Admin</option>
-  <option value="manager">Manager</option>
-  <option value="ceo">CEO</option>
+  <option value="Admin">Admin</option>
+  <option value="Manager">Manager</option>
+  <option value="CEO">CEO</option>
 
 
   </select>
