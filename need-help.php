@@ -16,7 +16,7 @@ session_start();
     
 <?php
 
-include("./view/header.php");
+include("header.php");
 
 echo '<div class="center">';
 
@@ -26,7 +26,7 @@ echo "(+1) 902-135-6804";
 
 echo '</div>';
 
-include("./view/footer.php");
+include("footer.php");
 ?>
 
   </body> 

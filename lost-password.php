@@ -13,7 +13,7 @@ session_start();
   </head>
 
 <body>
-<?php include("./view/header.php");
+<?php include("header.php");
 
 echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
 
@@ -33,7 +33,7 @@ echo "Please enter your email for lost password<br>"
   </form> 
 </div>
 
-<?php include("./view/footer.php"); ?>
+<?php include("footer.php"); ?>
 
 </body> 
 </html>

@@ -15,7 +15,7 @@ session_start();
 
   <?php
 
-include("./view/header.php");
+include("header.php");
 
 echo "You logged out successfully";
 // remove all session variables
@@ -24,7 +24,7 @@ session_unset();
 // destroy the session 
 session_destroy(); 
 
-include("./view/footer.php");
+include("footer.php");
 ?>
 
 </body>

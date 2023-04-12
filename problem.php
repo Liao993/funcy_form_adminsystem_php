@@ -16,7 +16,7 @@ session_start();
 
 <?php
 
-include("./view/header.php");
+include("header.php");
 echo "<br>";
 $role = $_POST["role"];
 $_SESSION["role"] = $_POST["role"];
@@ -53,7 +53,7 @@ switch ($role) {
       break;
 }
 
-include("./view/footer.php");
+include("footer.php");
 ?>
 
 
