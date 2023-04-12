@@ -13,7 +13,13 @@ session_start();
   </head>
 
 <body>
-<?php include("./view/header.php"); ?>
+<?php include("./view/header.php");
+
+echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
+
+echo "Please enter your email for lost password<br>"
+
+?>
 
 <div class=center>
     <form action="send-email.php" method="get">

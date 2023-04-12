@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,20 +11,22 @@
     <title>Halifax Canoe and Kayak</title>
 
   </head>
+  <body>
 
+  <?php
 
-<body>
-<?php include("./view/header.php");
+include("./view/header.php");
 
-echo '<div class="center">';
-echo "So your computer is not working.<br>";
+echo "You logged out successfully";
+// remove all session variables
+session_unset(); 
 
-echo '<img src ="computer.jpeg" alt=""/>';
-
-echo "</div>";
-
+// destroy the session 
+session_destroy(); 
 
 include("./view/footer.php");
 ?>
-</body> 
+
+</body>
+
 </html>

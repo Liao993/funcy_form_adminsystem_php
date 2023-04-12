@@ -56,6 +56,8 @@ switch ($role) {
 include("./view/footer.php");
 ?>
 
+
+
 </body>
 </html>
 

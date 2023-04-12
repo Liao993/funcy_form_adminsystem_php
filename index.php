@@ -15,6 +15,7 @@
     <?php include("./view/header.php"); ?>
 
 <div class=center>
+<h2>Welcome to your IT Support system</h2>
     <form action="problem.php" method="post">
   <table>
   <tr>
@@ -47,9 +48,20 @@
      
 </form> 
 </div>
+<div class=right>
 
 
-    <?php include("./view/footer.php"); ?>
+
+
+<a href='logout.php'>Logout</a><br>
+</div>
+  
+
+
+  
+<?php 
+include("./view/footer.php"); ?>
+
 
   </body>
 </html>
