@@ -28,7 +28,7 @@ session_start();
     $url.= $_SERVER['REQUEST_URI']; 
 
 
-    if (str_contains($url, 'newAccount')) {
+    if (strpos($url, 'newAccount') !== false) {
       $email = $_GET["newAccount"];
 
       echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
@@ -37,7 +37,7 @@ session_start();
   
     }
 
-    if (str_contains($url, 'lostPassword')) {
+    if (strpos($url, 'lostPassword') !== false) {
       $email = $_GET["lostPassword"];
 
       echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
