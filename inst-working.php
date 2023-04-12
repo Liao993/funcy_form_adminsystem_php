@@ -11,7 +11,7 @@
 
 
 <body>
-<?php include("./view/header.php");
+<?php include("header.php");
 
 echo '<div class="center">';
 echo "So your computer is not working.<br>";
@@ -21,7 +21,7 @@ echo '<img src ="computer.jpeg" alt=""/>';
 echo "</div>";
 
 
-include("./view/footer.php");
+include("footer.php");
 ?>
 </body> 
 </html>

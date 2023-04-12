@@ -13,7 +13,7 @@ session_start();
   </head>
   <body>
     <?php
-    include("./view/header.php");
+    include("header.php");
 
     echo '<div class="center">';
 
@@ -51,7 +51,7 @@ session_start();
       
  
 
-    include("./view/footer.php");
+    include("footer.php");
 
 
     ?>

@@ -12,7 +12,7 @@
   <body>
    
 
-    <?php include("./view/header.php"); ?>
+    <?php include("header.php"); ?>
 
 <div class=center>
 <h2>Welcome to your IT Support system</h2>
@@ -60,7 +60,7 @@
 
   
 <?php 
-include("./view/footer.php"); ?>
+include("footer.php"); ?>
 
 
   </body>
