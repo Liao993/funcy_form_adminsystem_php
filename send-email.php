@@ -16,18 +16,41 @@ session_start();
     include("./view/header.php");
 
     echo '<div class="center">';
-    $lost = $_GET["lostPassword"];
-    $email = $_GET["newAccount"];
+
+    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+    $url = "https://";   
+      else  
+    $url = "http://";   
+    // Append the host(domain name, ip) to the URL.   
+    $url.= $_SERVER['HTTP_HOST'];   
+
+    // Append the requested resource location to the URL   
+    $url.= $_SERVER['REQUEST_URI']; 
+
+
+    if (str_contains($url, 'newAccount')) {
+      $email = $_GET["newAccount"];
+
+      echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
+
+      echo "The email you registered is " . $email . ".";
+  
+    }
+
+    if (str_contains($url, 'lostPassword')) {
+      $email = $_GET["lostPassword"];
+
+      echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
+     
+      echo "The email for recovering your password is " . $email . ".";
+  
+    }
    
-
-
-
-    if 
-    echo "Hello " . $_SESSION["role"] . ":" . $_SESSION["fname"] . " " . $_SESSION["lname"] . "<br>";
-
-    echo "The email you registered is " . $email . ".";
-
     echo '</div>';
+
+      
+ 
+
     include("./view/footer.php");
 
 

@@ -25,6 +25,7 @@ echo " You can call this number for help <br>";
 echo "(+1) 902-135-6804";
 
 echo '</div>';
+
 include("./view/footer.php");
 ?>
 
